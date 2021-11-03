@@ -1,1 +1,99 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Vilmas Burgers</title>
+       <meta charset="utf-8"/>
+   </head>
+   <body>
+        <header>
+            <h1>Välkommen till Vilmas Burgare</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Select Burger</h2>
+                <p>Select what ypu want to order</p>
+                <div style="float:left;">
+                    <h3>Beef Burger</h3>
+                    <img src="img/burger1.jpg" alt="Beef Burger" title="Beef Burger" style="width: 200px;">
+                    <ul>
+                        <li>Contains gluten</li>
+                        <li>Spicy</li>
+                    </ul>
+                </div>
+
+                <div style="float:left;">
+                    <h3>Chicken Burger</h3>
+                    <img src="img/burger2.jpg" alt="Chicken Burger" title="Chicken Burger" style="width: 200px;">
+                    <ul>
+                        <li>Gluten Free</li>
+                        <li>Spicy</li>
+                    </ul>
+                </div>
+
+                <div style="float:left;">
+                    <h3>Halloumi Burger</h3>
+                    <img src="img/burger3.jpg" alt="Halloumi Burger" title="Halloumi Burger" style="width: 200px;">
+                    <ul>
+                        <li>Contains gluten</li>
+                        <li>Vegetarian</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section style="clear:left;">
+                 <h2>Customer Information</h2>
+                 <p>Provide your info</p>  
+                 <h3>Delivery info</h3>
+                 
+                <form>
+                    <p>
+                        <label for="name">Full Name</label><br>
+                        <input type ="text" id="name" name ="n" required="required" placeholder="Full name">
+                    </p>
+                    <p>
+                        <label for="email">Email</label><br>
+                        <input type ="email"id="email" name ="em" required="required" placeholder="Email Address">
+                    </p>
+                    <p>
+                        <label for="street">Street</label><br>
+                        <input type ="text"id="street" name ="s" required="required" placeholder="Street Name"><br>
+                    </p>
+                    <p>
+                        <label for="house">House</label><br>
+                        <input type ="number"id="house" name ="h" required="required" placeholder="House Number">
+                    </p>
+               
+                    <p>
+                        <label for="payment">Payment Option</label><br>
+                        <select id="payment" name="pm">
+                            <option>Card</option>
+                            <option selected="selected">Swish</option>
+                            <option>Invoice</option>
+                            <option>Bank transaction</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <h3>Select Gender</h3>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="nogender" name="gender" value="nogender" checked="checked">
+                        <label for="nogender">Do not wish to provide</label><br>
+                    </p>
+                    
+                </form>
+
+            </section> 
+            <button type="submit">
+                <img src="img/send.png" style="width:20px;">
+                Send Order
+              </button>     
+        </main>
+        <hr>
+        <footer>
+          <p>&copy; 2021 Vilmas Burgare Inc.</p>
+        </footer>
+   </body>
+</html>
