@@ -1,1 +1,71 @@
-/*empty*/
+html{
+    font-size: 34;
+}
+
+body{
+    font-family: arial;
+    font-size: 1em;
+}
+
+
+.allergies{
+    font-size: 0.8em; /*not a task but looks better */
+    font-weight: bold;
+}
+
+#menu{
+    background-color: black;
+    color: white;
+    margin: 1.2em;
+    padding: 1em;
+    border: 2px dashed white;
+    
+}
+
+#info{
+    margin: 1.2em;
+    padding: 1em;
+    border: 2px dashed black;
+   
+}
+
+.burgers{
+    display: grid;
+    grid-gap: 1.5em;
+    grid-template-columns: 33% 33% 33%;
+}
+.burgers img{
+    width: 12em;
+}
+.burgers div{
+    padding: 1em;
+}
+
+button:hover{
+    background-color: chartreuse;
+    cursor: pointer;
+}
+
+button{
+    margin: 2em; 
+}
+
+
+#top{
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    height: 170px;
+    overflow: hidden;
+}
+
+#top img{
+    opacity: 0.6;
+    width: 100%;
+    height: auto;
+    
+}
+
+#top h1{
+    position: absolute;
+    padding: 0.9em;
+}
