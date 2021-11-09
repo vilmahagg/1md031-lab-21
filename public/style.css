@@ -1,5 +1,5 @@
 html{
-    font-size: 34;
+    font-size: 30;
 }
 
 body{
@@ -37,6 +37,7 @@ body{
 .burgers img{
     width: 12em;
 }
+
 .burgers div{
     padding: 1em;
 }
@@ -48,6 +49,10 @@ button:hover{
 
 button{
     margin: 2em; 
+}
+
+button img{
+    width: 1.9em;
 }
 
 
