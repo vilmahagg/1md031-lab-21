@@ -1,0 +1,111 @@
+<!DOCTYPE HTML> 
+<html lang="en">
+   <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Vilmas Burgers</title>
+        <meta charset="utf-8"/>
+   </head>
+   <body>
+        <header id="top">
+            <h1>Välkommen till Vilmas Burgare</h1>
+            <img src="https://www.beernews.se/wp-content/uploads/2018/07/pub-1.jpg">
+            
+        </header>
+        <main>
+            <section id="menu">
+                <h2>Select Burger</h2>
+                <p>Select what you want to order</p>
+
+                <div class="burgers">
+                <div>
+                    <h3>Beef Burger</h3>
+                    <img src="img/burger1.jpg" alt="Beef Burger" title="Beef Burger">
+
+                    <ul>
+                        <section class="allergies">
+                        <li>Contains gluten</li>
+                        <li>Spicy</li>
+                        </section>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Chicken Burger</h3>
+                    <img src="img/burger2.jpg" alt="Chicken Burger" title="Chicken Burger">
+                    <ul>
+                        <section class="allergies">
+                        <li>Gluten Free</li>
+                        <li>Spicy</li>
+                        </section>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Halloumi Burger</h3>
+                    <img src="img/burger3.jpg" alt="Halloumi Burger" title="Halloumi Burger">
+                    <ul>
+                        <section class="allergies">
+                        <li>Contains gluten</li>
+                        <li>Vegetarian</li>
+                        </section>
+                    </ul>
+                </div>
+                </div>
+                
+            </section>
+
+            <section id="info">
+                 <h2>Customer Information</h2>
+                 <p>Provide your info</p>  
+                 <h3>Delivery info</h3>
+                 
+                <form>
+                    <p>
+                        <label for="name">Full Name</label><br>
+                        <input type ="text" id="name" name ="n" required="required" placeholder="Full name">
+                    </p>
+                    <p>
+                        <label for="email">Email</label><br>
+                        <input type ="email"id="email" name ="em" required="required" placeholder="Email Address">
+                    </p>
+                    <p>
+                        <label for="street">Street</label><br>
+                        <input type ="text"id="street" name ="s" required="required" placeholder="Street Name"><br>
+                    </p>
+                    <p>
+                        <label for="house">House</label><br>
+                        <input type ="number"id="house" name ="h" required="required" placeholder="House Number">
+                    </p>
+               
+                    <p>
+                        <label for="payment">Payment Option</label><br>
+                        <select id="payment" name="pm">
+                            <option>Card</option>
+                            <option selected="selected">Swish</option>
+                            <option>Invoice</option>
+                            <option>Bank transaction</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <h3>Select Gender</h3>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="nogender" name="gender" value="nogender" checked="checked">
+                        <label for="nogender">Do not wish to provide</label><br>
+                    </p>
+                    
+                </form>
+
+            </section> 
+            <button type="submit">
+                <img src="img/send.png">
+                Send Order
+              </button>     
+        </main>
+        <hr>
+        <footer>
+          <p>&copy; 2021 Vilmas Burgare Inc.</p>
+        </footer>
+   </body>
+</html>

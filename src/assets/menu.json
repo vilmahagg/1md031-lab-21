@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Beef Burger",
+        "kCal": 5000,
+        "lactose": true,
+        "gluten": false,
+        "img": "https://static01.nyt.com/images/2021/05/17/dining/kc-korean-bulgogi-burger/kc-korean-bulgogi-burger-mediumSquareAt3X.jpg"
+    },
+    {
+        "name": "Chicken Burger",
+        "kCal": 200,
+        "lactose": false,
+        "gluten": false,
+        "img": "https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg"
+    },
+    {
+        "name": "Halloumi Burger",
+        "kCal": 300,
+        "lactose": true,
+        "gluten": true,
+        "img": "https://www.thelastfoodblog.com/wp-content/uploads/2017/04/Halloumi-Burgers-thumb.jpg"
+    }
+]
