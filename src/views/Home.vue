@@ -3,6 +3,7 @@
     <h1>Välkommen till Vilmas Burgare</h1>
     <img src="https://www.beernews.se/wp-content/uploads/2018/07/pub-1.jpg" />
   </header>
+
   <main>
     <section id="menu">
       <h2>Select Burger</h2>
@@ -14,7 +15,6 @@
           v-bind:key="burger.name"
           v-on:orderedBurger="addToOrder($event)"
         />
-      
       </div>
     </section>
 
@@ -63,7 +63,7 @@
           <!-- <p>{{selected}} is selected</p> -->
         </div>
        
-        <div id="v-model-radiobutton">
+        <div>
           <h3>Select Gender</h3>
           <input
             type="radio"
@@ -94,8 +94,8 @@
           <label for="nogender">Do not wish to provide</label><br />
           <!-- <p>{{picked}} is picked</p> -->
         </div>
+        <h3>Select address</h3>
         <div class="mapwrapper">
-          <h3>Select address</h3>
           <div id="map" v-on:click="setLocation">{{location}}
             <div
               v-bind:style="{
@@ -203,20 +203,11 @@ export default {
     },
     addToOrder: function (event) {
       this.orderedBurgers[event.name] = event.amount;
-      console.log("hej");
-      console.log(event.name + event.amount);
-  
     },
     getOrderNumber: function () {
       return Math.floor(Math.random() * 100000);
     },
-    addOrder: function () {
-      // var offset = {
-      //   x: event.currentTarget.getBoundingClientRect().left,
-      //   y: event.currentTarget.getBoundingClientRect().top,
-      // };
-     
-    },
+    
     setLocation: function (event) {
       var offset = {
         x: event.currentTarget.getBoundingClientRect().left,
@@ -261,26 +252,26 @@ export default {
 
 html {
   font-size: 30;
-}
-
-body {
   font-family: arial;
   font-size: 1em;
 }
 
 #menu {
-  background-color: black;
-  color: white;
+  background-color:rgb(233, 211, 182);
+  color: black;
   margin: 1.2em;
   padding: 0.9em;
-  border: 2px dashed white;
+  border: 2px dashed white; 
 }
 
 #info {
+  background-color:peru;
   margin: 1.2em;
   padding: 0.9em;
-  border: 2px dashed black;
+  border: 2px dashed white;
+  color:black;
 }
+
 
 .burgers {
   display: grid;
@@ -293,12 +284,13 @@ body {
 }
 
 .sendbutton:hover {
-  background-color: chartreuse;
+  background-color: rgb(153, 216, 153);
   cursor: pointer;
 }
 
 .sendbutton {
   margin: 2em;
+
 }
 
 .sendbutton img {
@@ -310,7 +302,6 @@ body {
   margin-right: 1.2em;
   height: 170px;
   overflow: hidden;
-  
 }
 
 #top img {

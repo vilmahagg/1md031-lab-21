@@ -1,32 +1,26 @@
 <template>
-  <!-- <div>
-    {{ burger.name }} {{ burger.kCal }}
-  </div> -->
-
-
   <div class="burger">
     <h3>{{burger.name}}</h3>
     <img v-bind:src="burger.img">
     <ul>
-      <section class="allergies">
+      <section class="burgerinfo">
         <li>{{burger.kCal}} kCal</li>
-        <li  v-if="burger.gluten==true">Contains Gluten</li>
+        <li v-if="burger.gluten==true">Contains <span class="allergy">Gluten</span></li>
         <li v-else>Gluten Free</li>
-        <li  v-if="burger.lactose==true">Contains Lactose</li>
+        <li v-if="burger.lactose==true">Contains <span class="allergy">Lactose</span></li>
         <li v-else>Lactose Free</li>
       </section>
     </ul>
     <p>Amount: {{amountOrdered}}</p>
     <div class="burgerButtons">
     <button type="button" v-on:click="addBurger">
-      Add Burger
+      +
     </button>
      <button type="button" v-on:click="removeBurger">
-      Remove Burger
+      -
     </button>
     </div>
   </div>
-
 </template>
 
 <script>
@@ -62,19 +56,27 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
-
 .burger{
   text-align: center;
+  border: 2px solid rgb(255, 255, 255);
+}
+.burger h3{
+  font-size: 30px;
+  font-family: sans-serif;
+  color:peru;
 }
 .burger img {
   width: 16em;
 }
+
 ul{
   text-align: left;
 }
-.allergies {
-  font-size: 0.8em; /*not a task but looks better */
+.burgerinfo{
+  font-size: 0.8em; 
+}
+.allergy {
+  
   font-weight: bold;
 }
 .burgerButtons{
@@ -84,12 +86,16 @@ ul{
 }
 
 .burgerButtons button{
-  height: 3em;
+  height: 30px;
   background-color:peru;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+
 }
 
 .burgerButtons button:hover {
-  background-color: gray;
+  background-color:white;
   cursor: pointer;
 }
 
